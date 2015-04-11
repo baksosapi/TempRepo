@@ -1,0 +1,2 @@
+include ':FacialDataProcessing', ':FacialRecognitionSample', ':GalleryProcessing', ':SmartShutter', ':libelements-fpr'
+project(':libelements-fpr').projectDir=new File('../libelements-fpr')

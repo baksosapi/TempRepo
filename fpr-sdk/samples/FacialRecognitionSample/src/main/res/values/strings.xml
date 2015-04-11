@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* ======================================================================
+ *  Copyright 2014 Qualcomm Technologies, Inc. All Rights Reserved.
+ *  QTI Proprietary and Confidential.
+ *  =====================================================================
+ *
+ */-->
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Snap Recognition</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_add_photo">AddPhoto</string>
+    <string name="title_activity_image_confirmation">ImageConfirmation</string>
+    <string name="title_activity_choose_user">ChooseUser</string>
+    <string name="title_activity_live_recognition">LiveRecognition</string>
+    <string name="imageview_bar">This is the black bar on which shutter, gallery and settings button is placed</string>
+    <string name="imageview_shutter_button">ImageView for Shutter button</string>
+    <string name="imageview_gallery_button">ImageView for Gallery button</string>
+    <string name="imageview_settings_button">ImageView for Settings button</string>
+    <string name="imageview_display_pic">ImageView where selected picture will be displayed</string>
+    <string name="imageview_menu_bar">ImageView bar when the settings button is clicked and icons are displayed on it</string>
+    <string name="imageview_switch_camera_button">ImageView for switch camera button</string>
+    <string name="imageview_flash_button">ImageView for flash button</string>
+    <string name="imageview_confirmation_view">ImageView where picture will be displayed for confirmation</string>
+    <string name="imageview_approve_button">ImageView for approve button</string>
+    <string name="imageview_cancel_button">ImageView for cancel button</string>
+    <string name="imageview_home_button">ImageView for home button</string>
+    <string name="imageview_profile_pic">ImageView for profile pic with name</string>
+
+</resources>

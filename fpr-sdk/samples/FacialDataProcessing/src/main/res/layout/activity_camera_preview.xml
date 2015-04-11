@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/* ======================================================================
+*  Copyright � 2012 Qualcomm Technologies, Inc. All Rights Reserved.
+*  QTI Proprietary and Confidential.
+*  =====================================================================
+*
+*  Licensed by Qualcomm, Inc. under the Snapdragon SDK for Android license.
+*
+*  You may not use this file except in compliance with the License.
+*  You may obtain a copy of the License at
+*
+*    https://developer.qualcomm.com/snapdragon-sdk-license
+*
+*  This Qualcomm software is supplied to you by Qualcomm Inc. in consideration
+*  of your agreement to the licensing terms.  Your use, installation, modification
+*  or redistribution of this Qualcomm software constitutes acceptance of these terms.
+*  If you do not agree with these terms, please do not use, install, modify or
+*  redistribute this Qualcomm software.
+*
+*  Qualcomm grants you a personal, non-exclusive license, under Qualcomm's
+*  copyrights in this original Qualcomm software, to use, reproduce, modify
+*  and redistribute the Qualcomm Software, with or without modifications, in
+*  source and/or binary forms; provided that if you redistribute the Qualcomm
+*  Software in its entirety and without modifications, you must retain this
+*  notice and the following text and disclaimers in all such redistributions
+*  of the Qualcomm Software.
+*
+*  Unless required by applicable law or agreed to in writing, software
+*  distributed under the License is distributed on an "AS IS" BASIS,
+*  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+*  See the License for the specific language governing permissions and
+*  limitations under the License.
+*
+* @file    activity_camera_preview.xml
+* @brief   Android application manifest file for DeviceInfo API.
+*/-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    android:gravity="top"
+    tools:context=".CameraPreviewActivity" >
+
+    <FrameLayout
+        android:id="@+id/camera_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+                android:id="@+id/pauseButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pause" />
+
+         <ImageView
+                android:id="@+id/switchCameraButton"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/switchcam" />
+
+    <TextView
+        android:id="@+id/numFaces"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pauseButton"
+        android:layout_below="@+id/camera_preview"
+        android:text="Number of Faces: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/smileValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/switchCameraButton"
+        android:layout_below="@+id/camera_preview"
+        android:text="Smile Value: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/gazePoint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pauseButton"
+        android:layout_below="@+id/numFaces"
+        android:text="Gaze Point Value: ( , ) "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/faceRoll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/switchCameraButton"
+        android:layout_below="@+id/smileValue"
+        android:text="Face Roll Value: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/leftEyeBlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pauseButton"
+        android:layout_below="@+id/gazePoint"
+        android:text="Left Eye Blink Value: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/rightEyeBlink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/switchCameraButton"
+        android:layout_below="@+id/gazePoint"
+        android:text="Right Eye Blink Value: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/faceYawValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pauseButton"
+        android:layout_below="@+id/leftEyeBlink"
+        android:text="Face Yaw Value: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/facePitchValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/switchCameraButton"
+        android:layout_below="@+id/rightEyeBlink"
+        android:text="Face Pitch Value: "
+        android:textColor="#FFA500" />
+
+
+    <TextView
+        android:id="@+id/horizontalGazeAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pauseButton"
+        android:layout_below="@+id/faceYawValue"
+        android:text="Horizontal Gaze: "
+        android:textColor="#FFA500" />
+
+    <TextView
+        android:id="@+id/verticalGazeAngle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/switchCameraButton"
+        android:layout_below="@+id/facePitchValue"
+        android:text="Vertical Gaze: "
+        android:textColor="#FFA500" />
+
+</RelativeLayout>
