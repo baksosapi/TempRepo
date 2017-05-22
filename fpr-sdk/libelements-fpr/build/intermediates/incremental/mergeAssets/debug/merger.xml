@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/home/sid/Documents/Apps/android/FacialRecognition/Qualcomm/TempRepo/fpr-sdk/libelements-fpr/src/main/assets"/></dataSet><dataSet config="debug"><source path="/home/sid/Documents/Apps/android/FacialRecognition/Qualcomm/TempRepo/fpr-sdk/libelements-fpr/src/debug/assets"/></dataSet></merger>
